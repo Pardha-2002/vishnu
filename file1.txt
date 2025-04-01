@@ -1,1 +1,2 @@
 it is file 2
+it is updated 
