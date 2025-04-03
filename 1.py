@@ -14,3 +14,14 @@ tup1=(1,2,3,4,5)
 print(tup1[1])
 print(tup1[2])
 print(tup1[-1])
+#boolean
+a=True
+b=False
+print(type(a))
+print(type(b))
+print(type(True))
+#set
+s1=set('hellowelcomehello')
+s2=set('helloforhello')
+print('output',s1)
+print('output2',s2)
