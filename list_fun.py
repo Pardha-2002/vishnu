@@ -1,0 +1,11 @@
+l1=[1,2,15,14,4,5,6,7,8,9]
+l1.append(10)
+print('append',l1)
+l1.pop(1)
+print('pop',l1)
+l1.sort()
+print('sort',l1)
+l1.reverse()
+print('reverse',l1)
+l1.remove(7)
+print('remove',l1)
