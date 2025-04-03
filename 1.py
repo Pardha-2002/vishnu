@@ -48,3 +48,82 @@ x=None
 print(type(x))
 # y
 # print(type(y))
+#if else statement
+a=int(input())
+b=int(input())
+
+if a>b:
+    print('a is greater than b')
+elif a<b:
+    print('b is greater than a')
+else:
+    print('a==b')
+# nestedifelse
+i=int(input())
+if i!=0:
+    if i>0:
+        print('postive')
+    else:
+        print("negative")
+else:
+    print('i is 0')
+
+
+n=5
+while n>=0:
+    if n==2:
+        break
+    print(n)
+    n-=1
+# for loop
+thistuple=('apple','banana','cherry')
+for x in thistuple:
+    print(x)
+# nestedforloop
+x=[1,2]
+y=[4,5]
+for i in x:
+    for j in y:
+        print(i,j)
+dict1={1:'rahool',2:'ravi',3:'kumar'}
+for i in dict1.keys():
+    print(i)
+# function creating
+def greet(name):
+    print('hello',name)
+greet('vishnu')
+#return sum
+def sum(a,b):
+    return a+b
+print(sum(1,2))
+# default perameter
+def greet(name='guest'):
+    print('hello',name)
+greet()
+greet('bob')
+#multiple return value
+def get_details(name='basha',age=23):
+    return name,age
+n1,a1=get_details()
+n2,a2=get_details('vishnu',22)
+print(f"name:{n1} age :{a1}")
+print(f"name:{n2} age :{a2}")
+#function with *args
+def add_all(*num):
+    return sum(num)
+print(add_all(1,2,34,5,6))
+# function with keyword argumets **kwargs
+def info(**details):
+    for key,value in details.items():
+        print(f"{key}:{value}")
+info(name='vishnu',age=22,company='techm')
+import array
+fruits=array.array('u','applebanancherry')
+print(fruits[0])
+for i in fruits:
+    print(i,end='')
+print()
+import array
+num=array.array('i',[5,2,3,4,1])# if use u in the place of i we get type error
+print(len(num))
+print(sorted(num))
