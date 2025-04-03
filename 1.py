@@ -22,6 +22,29 @@ print(type(b))
 print(type(True))
 #set
 s1=set('hellowelcomehello')
-s2=set('helloforhello')
+s2=set(['hello','for','hello'])
 print('output',s1)
 print('output2',s2)
+#slicing
+name='vishnu'
+print(name[1])
+print(name[1:4])
+print(name.upper())
+#range function
+l=range(1,10,2)
+print(list(l))
+#fozen set
+fs=frozenset({1,2,3})
+# fs.add(4) attribute error
+#dictionary
+d1={'name':'vishnu','age':22,'company':'TechM'}
+print(d1['name'])
+#BINARY DATA TYPES
+c=[65,66,67]
+b=bytes([65])
+print(b,c)
+#NoneType
+x=None
+print(type(x))
+# y
+# print(type(y))
