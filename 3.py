@@ -73,7 +73,83 @@
 '''
 c - convention
 '''
-
-
-
-
+#exception 
+# try:
+#     x=10/0
+# except ZeroDivisionError:
+#     print('divide by zero')
+# finally:
+#     print('completed execution')
+# # multiple Exception
+# try:
+#     num=int(input())
+#     result=10/num
+# except ValueError:
+#     print('invalid input')
+# except ZeroDivisionError:
+#     print('cant divided by zero')
+# except Exception as e:
+#     print('unkown',e)
+# else:
+#     print('result',result)
+# finally:
+#     print('code executed')
+# # user defined Exception
+# def checkagte(age):
+#     if age<18:
+#         raise ValueError('age must be 18')
+#     else:
+#         print('ur eligible')
+# try:
+#     checkagte(int(input()))
+# except ValueError as e:
+#     print(e)
+# #userdefined user not found exception
+# class noteligibletovote(Exception):
+#     pass
+# def checkage(age):
+#     if age<18:
+#         raise noteligibletovote('age must be 18')
+#     else:
+#         print('yor are eligible')
+# try:
+#     checkage(int(input()))
+# except noteligibletovote as e:
+#     print(e)
+##file handling
+# file=open('C:/Users/unkown/Desktop/revature/vishnu/text.txt','r')
+# c=file.read()
+# print(c)
+# c1=file.readline()
+# c2=file.readlines()
+# print(c1,c2,sep="\n")
+# file=open('C:/Users/unkown/Desktop/revature/vishnu/text.txt','a')
+# file.write('addding 4th line\n')
+# file.write('adding 5th line')
+# # a=file.read()
+# # print(a)
+# file.close()
+# #file is existing or not??
+# import os
+# if os.path.exists("C:/Users/unkown/Desktop/revature/vishnu/text.txt"):
+#     with open('C:/Users/unkown/Desktop/revature/vishnu/text.txt','r') as file:
+#         content=file.read()
+#         print(content)
+# else:
+#     print("file does not exist")
+# #file handling with exceptional handling
+# import os
+# try:
+#     with open('C:/Users/unkown/Desktop/revature/vishnu/text.txt','r') as file:
+#         data=file.read()
+#     with open('C:/Users/unkown/Desktop/revature/vishnu/text1.txt','w') as file1:
+#         file1.write(data)
+# except FileNotFoundError:
+#     print('i/o or o/p operation file')
+# except IOError as e:
+#     print('io error',e)
+# except Exception as e:
+#     print('un expected')
+# deleting file
+# import os
+# os.rmdir('C:/Users/unkown/Desktop/revature/vishnu/sample')
